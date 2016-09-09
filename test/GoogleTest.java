@@ -8,12 +8,15 @@ import static com.codeborne.selenide.Selenide.*;
 public class GoogleTest
 {
     @Test
-    public void search_selenide_in_google()
+    public void searchForSelenideInGoogle()
     {
         open("http://google.com");
         $(By.name("q")).val("selenide").pressEnter();
+
         $$("#ires li.g").shouldHave(size(10));
-        $("#ires").find(By.linkText("selenide.org")).shouldBe(visible);
+
+        // under #ires div, find first hyperlink with matching href
+        $("#ires").find(By.linkText("http://selenide.org/")).shouldBe(visible);
     }
 
 }
