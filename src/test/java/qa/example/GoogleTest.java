@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class GoogleTest extends TestBase
 {
     @Test
-    public void searchForSelenideInGoogleUsingXPath()
+    public void searchInGoogleUsingXPath()
     {
         open("http://google.com");
         $(By.name("q")).val("selenide").pressEnter();
