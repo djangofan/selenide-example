@@ -15,6 +15,8 @@ need to update it.
 
 ## Report
 
-Report .html will store a screenshot.
+Report .html will store a screenshot: `build/reports/tests/GoogleTest/searchForSelenideInGoogle/1473466460129.0.html`
+
+And it will also store a regular Gradle report: `build/reports/tests/test/classes/GoogleTest.html`
 
 

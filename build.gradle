@@ -6,12 +6,12 @@ version = '1.0'
 
 sourceSets {
     main {
-        java {srcDir 'src'}
-        resources {srcDir 'src'}
+        java {srcDir 'src/main/java'}
+        resources {srcDir 'src/main/resources'}
     }
     test {
-        java {srcDir 'test'}
-        resources {srcDir 'test'}
+        java {srcDir 'src/test/java'}
+        resources {srcDir 'src/test/resources'}
     }
 }
 
@@ -20,8 +20,8 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile 'com.codeborne:selenide:3.9.2'
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.codeborne:selenide:3.9.2'
 }
 
 test {
